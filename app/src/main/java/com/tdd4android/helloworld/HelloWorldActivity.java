@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 
 public class HelloWorldActivity extends ActionBarActivity {
@@ -12,6 +14,8 @@ public class HelloWorldActivity extends ActionBarActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_hello_world);
+    TextView view = (TextView) findViewById(R.id.message);
+    view.setText("Ciao!");
   }
 
 
